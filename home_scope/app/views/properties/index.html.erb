@@ -1,0 +1,26 @@
+<%= form_with url: properties_path, method: :get, local: true do |form| %>
+  <%= form.label :search, 'Search by zipcode:' %>
+  <%= form.text_field :search, value: params[:search] %>
+  <%= form.submit 'Search' %>
+<% end %>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Price</th>
+      <th>Zipcode</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @properties.each do |property| %>
+      <tr>
+        <td><%= property.name %></td>
+        <td><%= property.address %></td>
+        <td><%= property.price %></td>
+        <td><%= property.zipcode %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
