@@ -1,14 +1,15 @@
 class Property
     include Mongoid::Document
 
-    field :name, type: String
-    field :description, type: String
-    field :price, type: Float
+    field :status, type: String
+    field :price, type: String
 
-    field :address, type: String
-    field :zipcode, type: String
+    field :address1, type: String
+    field :address2, type: String
+    field :image, type: String
 
-    def self.search(zipcode)
-        where(zipcode: zipcode)
+    def self.search(query)
+        regex = /#{query}/i
+        Property.or({ address1: regex }, { address2: regex })
     end
 end

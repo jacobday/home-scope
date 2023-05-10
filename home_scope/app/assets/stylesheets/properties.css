@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap');
+
+:root {
+    --font-serif: 'Playfair Display', serif;
+    --font-sans-serif: 'Inter', sans-serif;
+
+    --theme-transition: all 0.2s ease;
+}
+
+/* General Styling */
+body {
+    font-family: var(--font-sans-serif);
+}
+
+h1 {
+    font-family: var(--font-serif);
+    font-size: 3.75em;
+    line-height: 1;
+}
+
+h2 {
+    font-size: 1.4em;
+    font-weight: 300;
+}
+
+/* Header Styling */
+.header {
+    background: linear-gradient(to top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("header.jpeg");
+    background-repeat: no-repeat;
+    background-size: 107%;
+    background-position: left 79%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 11em 0em 9em 0;
+    margin-bottom: 3.5em;
+}
+
+.header h1, .header h2{
+    color: white;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px;
+
+    margin: 0;
+}
+
+.header h1 {
+    margin-bottom: 0.3em;
+}
+
+.header h2 {
+    margin-bottom: 2.5em;
+}
+
+/* Searchbar Styling */
+.searchbar {
+    width: fit-content;
+    background-color: white;
+    border-radius: 36px;
+
+    padding-left: 1em;
+}
+
+.searchbar form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.searchbar input {
+    height: 100%;
+    font-size: 1.25em;
+
+    border: none;
+    outline: none;
+}
+
+.searchbar button {
+    height: 3em;
+    width: 3em;
+
+    background-color: #f02a26;
+    
+    border-radius: 50%;
+    border: none;
+
+    margin: 7px;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+    transition: var(--theme-transition);
+}
+
+.searchbar button:hover {
+    background-color: #c73633;
+}
+
+.searchbar button svg {
+    fill: white;
+}
+
+/* Listings Styling */
+.listings {
+    color: rgb(43, 43, 43);
+    margin: 0 1em 2em 1em;
+}
+
+.listings h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.listings .container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.listings .card {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px;
+    
+    flex-basis: 32%;
+    overflow: hidden;
+    
+    cursor: pointer;
+    transition: var(--theme-transition);
+}
+
+.listings .card:hover {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 5px;
+}
+
+/* Card Styling */
+.card img {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card .price {
+    font-size: 1.4em;
+    font-weight: 600;
+
+    margin-bottom: 0.25em;
+}
+
+.card .status, .card .address1, .card .address2 {
+    font-size: 0.9em;
+}
+
+.card .meta-container {
+    padding: 0.5em 1em 1em 1em;
+}
