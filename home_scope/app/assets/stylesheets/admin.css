@@ -4,16 +4,29 @@
   --color-hover: rgb(219, 219, 219);
 }
 
-/* General Styling */
+/* Header Styling */
 h1.admin {
   text-align: center;
 }
 
+.back-link {
+  color: black;
+  text-decoration: none;
+
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
+
+.back-link:visited {
+  color: black;
+}
+
+/* Property Table Styling */
 .admin.container {
   padding: 1em 3em;
 }
 
-/* Property Table Styling */
 table {
   width: 100%;
 
@@ -78,4 +91,27 @@ tfoot td {
 
 .actions a:hover {
   border-bottom: none;
+}
+
+/* New Property Styling */
+.new h1 {
+  text-align: center;
+}
+
+.new section.form {
+  display: flex;
+  justify-content: center;
+}
+
+.new form {
+  /* width: 80%; */
+
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.new form select, .new form input {
+  margin-bottom: 1em;
 }

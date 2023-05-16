@@ -1,22 +1,28 @@
-<h1>New Property</h1>
+<main class="new">
+  <h1>New Property</h1>
 
-<%= form_with model: @property, url: admin_properties_path do |form| %>
-  <%= form.label :status %>
-  <%= form.select :status, [['For Sale'],['Pending'],['Off Market']] %>
+  <section class="form">
+    <%= form_with model: @property, url: admin_properties_path do |form| %>
+      <%= form.label :status %>
+      <%= form.select :status, [['For Sale'],['Pending'],['Off Market']] %>
 
-  <%= form.label :price %>
-  <%= form.text_field :price %>
+      <%= form.label :price %>
+      <%= form.text_field :price %>
 
-  <%= form.label :Street %>
-  <%= form.text_field :address1 %>
+      <%= form.label :Street %>
+      <%= form.text_field :address1 %>
 
-  <%= form.label "City, State, ZIP" %>
-  <%= form.text_field :address2 %>
+      <%= form.label "City, State, ZIP" %>
+      <%= form.text_field :address2 %>
 
-  <%= form.label "Image URL" %>
-  <%= form.text_field :image %>
+      <%= form.label "Image URL" %>
+      <%= form.text_field :image %>
 
-  <%= form.submit "Create Property" %>
-<% end %>
+      <%= form.submit "Create Property" %>
+    <% end %>
+  </section>
 
-<%= link_to "Back to List", admin_properties_path %>
+  <div class="back-link">
+    <%= link_to "Back to List", admin_properties_path %>
+  </div>
+</main>
