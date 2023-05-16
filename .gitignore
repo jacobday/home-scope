@@ -67,3 +67,4 @@ build-iPhoneSimulator/
 
 .DS_Store
 master.key
+home_scope/log/development.log

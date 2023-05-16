@@ -23,6 +23,15 @@ h2 {
     font-weight: 300;
 }
 
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
 /* Header Styling */
 .header {
     background: linear-gradient(to top, rgba(0,0,0,0.25), rgba(0,0,0,0.25)), url("header.jpeg");
@@ -37,6 +46,23 @@ h2 {
 
     padding: 11em 0em 9em 0;
     margin-bottom: 3.5em;
+
+    position: relative;
+}
+
+.header .admin-link {
+    color: white;
+    text-decoration: none;
+    
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+
+
+.admin-link:visited {
+    color: white;
 }
 
 .header h1, .header h2{

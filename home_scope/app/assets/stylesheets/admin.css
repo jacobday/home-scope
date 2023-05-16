@@ -1,0 +1,79 @@
+:root {
+  --color-main: #f02a26;
+  --color-alt: rgb(240, 240, 240);
+  --color-hover: rgb(219, 219, 219);
+}
+
+h1.admin {
+  text-align: center;
+}
+
+.admin.container {
+  padding: 1em 3em;
+}
+
+table {
+  width: 100%;
+
+  border-collapse: collapse;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+
+  overflow: hidden;
+}
+
+thead {
+  box-sizing: border-box;
+}
+
+thead th {
+  font-size: 18px;
+  font-weight: 600;
+  text-align: left;
+  line-height: 1.4;
+  
+  color: white;
+  background-color: var(--color-main);
+
+  padding: 1em 0;
+}
+
+thead th:first-of-type {
+  padding-left: 1em;
+}
+
+tbody tr {
+  text-align: left;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: var(--color-alt);
+}
+
+tbody tr:hover {
+  background-color: var(--color-hover);
+}
+
+tbody img {
+  height: 100px;
+  width: 150px;
+
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+tfoot td {
+  padding: 1.5em 0 1.5em 1em;
+}
+
+.actions {
+  color: blue;
+}
+
+.actions a {
+  border-bottom: 1px solid blue;
+}
+
+.actions a:hover {
+  border-bottom: none;
+}

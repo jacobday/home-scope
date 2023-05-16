@@ -1,0 +1,32 @@
+<h1 class="admin">Admin Panel</h1>
+
+<div class="admin container">
+    <table>
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Price</th>
+                <th>Address</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <%# Listing Rows %>
+            <% @properties.each do |property| %>
+                <tr>
+                    <td><%= image_tag (property.image)%></td>
+                    <td><%= property.price %></td>
+                    <td><%= property.address1 %> <%= property.address2 %></td>
+                    <td class="actions">
+                        <%# <%= link_to "Edit", edit_admin_property_path(property), method: :update %>
+                        <%= link_to "Delete", admin_property_path(property), method: :delete, data: { confirm: "Are you sure?" } %>
+                    </td>
+                </tr>
+            <% end %>
+        </tbody>
+
+        <tfoot><td class="actions"><%= link_to "New Property", new_admin_property_path %></td></tfoot>
+    </table>
+</div>
+

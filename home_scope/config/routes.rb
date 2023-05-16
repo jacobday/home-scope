@@ -4,7 +4,14 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "properties#index"
 
-  Rails.application.routes.draw do
-    resources :properties, only: [:index]
+  namespace :admin do
+    resources :properties, only: [:index, :new, :create, :destroy]
+    delete 'admin/properties/:id', to: 'admin/properties#destroy', as: 'admin_property'
+
+    resources :properties do
+      get 'edit', on: :member
+    end
   end
+
+  resources :properties, only: [:index]
 end
