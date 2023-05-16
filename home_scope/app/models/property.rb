@@ -3,7 +3,6 @@ class Property
 
     field :status, type: String
     field :price, type: String
-
     field :address1, type: String
     field :address2, type: String
     field :image, type: String

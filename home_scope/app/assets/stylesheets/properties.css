@@ -53,13 +53,11 @@ a:visited {
 .header .admin-link {
     color: white;
     text-decoration: none;
-    
+
     position: absolute;
     top: 1em;
     right: 1em;
 }
-
-
 
 .admin-link:visited {
     color: white;
@@ -108,7 +106,7 @@ a:visited {
     width: 3em;
 
     background-color: #f02a26;
-    
+
     border-radius: 50%;
     border: none;
 
@@ -118,7 +116,7 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     cursor: pointer;
     transition: var(--theme-transition);
 }
@@ -154,10 +152,10 @@ a:visited {
 .listings .card {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 3px;
-    
+
     flex-basis: 32%;
     overflow: hidden;
-    
+
     cursor: pointer;
     transition: var(--theme-transition);
 }

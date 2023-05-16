@@ -4,6 +4,7 @@
   --color-hover: rgb(219, 219, 219);
 }
 
+/* General Styling */
 h1.admin {
   text-align: center;
 }
@@ -12,6 +13,7 @@ h1.admin {
   padding: 1em 3em;
 }
 
+/* Property Table Styling */
 table {
   width: 100%;
 
@@ -31,7 +33,7 @@ thead th {
   font-weight: 600;
   text-align: left;
   line-height: 1.4;
-  
+
   color: white;
   background-color: var(--color-main);
 
