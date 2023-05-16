@@ -14,7 +14,7 @@
 
   <div>
     <a href="#features">Features</a> •
-    <a href="#customer-demo">Customer Demo</a> •
+    <a href="#customer-demo-v100">Customer Demo</a> •
     <a href="#technologies-used">Technologies Used</a> •
     <a href="#getting-started">Getting Started</a>
   </div>
