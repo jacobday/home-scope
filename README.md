@@ -7,7 +7,7 @@
 <h4>Discover your dream home with a clear view of the market.</h4>
 
   <p>
-    <a href="https://github.com/jacobday/athlos-api/releases/latest">
+    <a href="https://github.com/jacobday/home-scope/releases/latest">
         <img alt="latest release" src="https://badgen.net/github/release/jacobday/home-scope">
     </a>
   </p>
