@@ -8,7 +8,10 @@ class Property
     field :image, type: String
 
     def self.search(query)
-        regex = /#{query}/i
+        # Prevent regex injection by sanitizing the user's input
+        escaped_query = Regexp.escape(query)
+
+        regex = /#{escaped_query}/i
         Property.or({ address1: regex }, { address2: regex })
     end
 end
