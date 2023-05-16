@@ -26,7 +26,7 @@
 - Property Search: Search for properties based on address, city, or zipcode.
 - Admin Dashboard: Access an admin interface to manage properties, including creating, editing, and deleting them.
 
-## Customer Demo (v.1.0.0)
+## Customer Demo (v1.0.0)
 
 [![Home Scope Demo Video](./readme/video-thumbnail.png)](https://youtu.be/3-bj9XmvFo0 "Home Scope Demo Video")
 
